@@ -235,8 +235,8 @@ class Folderer():
                             tt += 1
                     except Exception:
                         pass
-            if walkInside == False:
-                break
+                if walkInside == False:
+                    break
 
         print(
             f'--------------------\nSuccessfully removed duplicate items\n--------------------\nTotal removed {tt} from path : ({path}) full inside possible\n--------------------\nFull directory size was : {totScanMsg} [ DONE ]')
