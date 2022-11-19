@@ -152,7 +152,7 @@ class Folderer():
                         s += stat(_).st_size
             except TypeError:
                 raise TypeError(
-                    'unsuppoerted format, must be B | MB | KB | GB')
+                    'unsupported format, must be B | MB | KB | GB')
             except Exception:
                 return 0
         return s if (bytesTo == 'B') else s/(1024*1024) if bytesTo == 'MB' else s/(1024*1024*1024) if bytesTo == 'GB' else s/1024
